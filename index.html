@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day Wishes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Friendship Day!</h1>
+        <p>Do you want to read some special Friendship Day wishes?</p>
+        <button onclick="showWishes()">Yes</button>
+        <button id="noButton" onclick="glitterEffect()">No</button>
+    </div>
+
+    <script>
+        function showWishes() {
+            window.location.href = 'friendship.html'; // Change to your actual wishes page URL
+        }
+
+        function glitterEffect() {
+            var noButton = document.getElementById('noButton');
+            noButton.classList.add('glitter');
+            setTimeout(() => {
+                noButton.classList.remove('glitter');
+            }, 1500); // Glitter effect lasts for 1.5 seconds
+        }
+    </script>
+</body>
+</html>
